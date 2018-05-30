@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#223d65"
+    tools:context="com.tech.gigabyte.autocompleteproducts.MainActivity">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20sp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="15dp"
+        android:layout_alignParentLeft="true" />
+
+    <AutoCompleteTextView
+        android:id="@+id/autoCompleteTextView1"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:layout_margin="20dp"
+        android:layout_below="@+id/textView1"
+        android:background="@drawable/my_style"
+        android:hint="@string/type_product_name"
+        android:textAlignment="center"
+        android:text="">
+
+        <requestFocus />
+    </AutoCompleteTextView>
+
+</RelativeLayout>
